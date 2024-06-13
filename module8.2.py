@@ -56,6 +56,7 @@ def my_unzip(filename):
                 # Если успешно распаковано, то добавляем в список распакованных файлов из архива
                 zipped_file_list.append(filename)
         print(f'Распаковано: {zipped_file_list}')
+        zfile.close()
         return zipped_file_list  # Всё, что удалось распаковать
 
 
